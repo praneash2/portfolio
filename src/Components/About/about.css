@@ -1,0 +1,28 @@
+.about-wrapper{
+    display: flex;
+    justify-content: center;
+    padding-bottom:30px;
+}
+
+.about-box-model-wrapper{
+    margin-top: 20px;
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-me{
+    display: block;
+    font-size: 2rem;
+    align-self: center;
+}
+
+.about-me-description{
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 2;
+    word-spacing: 5px;  
+}
+
+

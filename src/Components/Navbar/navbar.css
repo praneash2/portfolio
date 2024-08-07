@@ -1,0 +1,46 @@
+.navbar-wrapper{
+ display: flex;
+ justify-content: center;   
+}
+
+.navbar-box-wrapper{
+    margin-top:15px;
+    width: 1025px;
+}
+
+.navbar-box-wrapper,.navbar-sections,.phone-number{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar-box-wrapper{
+    
+    justify-content: space-between;
+
+}
+.navbar-name::first-letter{
+    color: Red;
+}
+
+.navbar-links{
+    color:white;
+    background-color: transparent;
+    border:0;
+}
+
+.navbar-links:hover{
+    color:red;
+}
+.navbar-sections{
+    gap:1rem;
+}
+
+.navbar-links:visited{
+    color:red;
+}
+
+.phone-svg{
+    width:30px;
+    height:30px;
+    background-color: white;
+}
