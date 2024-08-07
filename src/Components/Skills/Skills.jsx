@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './skills.css';
 
 export default function Skills() {
+
+    const [skills,setSkills]=useState({"frontend":["","",""]});
+
   return (
     <div className='skills-wrapper'>
         <h6 className='skills-heading'>Skills</h6>
@@ -9,26 +12,15 @@ export default function Skills() {
             <div className='frontend-skills-wrapper skill-wrapper'>
                 <p className='skill-title'>Frontend</p>
                 <div className='skills'>
-                <div className='skills-img-wrapper'>
-                    <div className='skill'>
-
-                    </div>
-                    </div>
-                    <div className='skills-img-wrapper'>
-                        <div className='skill'>
-
-                        </div>
-                    </div>
-                    <div className='skills-img-wrapper'>
-                        <div className='skill'>
-
-                        </div>
-                    </div>
-                    <div className='skills-img-wrapper'>
-                        <div className='skill'>
-
-                        </div>
-                    </div>
+                    {
+                        skills["frontend"].map((value)=>{
+                            return <div className='skills-img-wrapper'>
+                            <div className='skill'>
+                                    {value}
+                            </div>
+                        </div>;
+                        })
+                    }
                 </div>
                 
             </div>
